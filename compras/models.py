@@ -3,8 +3,8 @@ from django.utils import timezone
 
 class Producto(models.Model):
     nombre=models.CharField(max_length=200)
-    fechaRegistroInicial=models.DateTimeFild()
-    fechaCompra=models.DateTimeFild(balnk=TRUE, null=True)
+    fechaRegistroInicial=models.DateTimeField()
+    fechaCompra=models.DateTimeField(blank=True, null=True)
 
 
     def comprar(self):
